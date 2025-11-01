@@ -1,0 +1,6 @@
+{"instruction": "What is UMI counting?", "output": "Unique Molecular Identifier (UMI) counting helps identify and remove PCR duplicates in single-cell RNA-Seq data."}
+{"instruction": "What is STAR?", "output": "STAR is a splice-aware aligner designed for fast and accurate alignment of RNA-Seq reads, capable of detecting novel splice junctions."}
+{"instruction": "What is spurious peak filtering?", "output": "Spurious peaks are false-positive ChIP-Seq peaks, often filtered using input controls or statistical thresholds."}
+{"instruction": "What is SNP annotation?", "output": "SNP annotation links single-nucleotide polymorphisms to genes and predicts functional impacts."}
+{"instruction": "What are paired-end reads?", "output": "Paired-end reads sequence both ends of a DNA fragment, providing more context for alignment and variant calling."}
+{"instruction": "Explain mapping quality score.", "output": "Mapping quality indicates the confidence that a read is correctly aligned to the reference genome."}

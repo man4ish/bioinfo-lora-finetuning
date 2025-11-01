@@ -1,0 +1,49 @@
+{"instruction": "Explain ChIP-Seq.", "output": "ChIP-Seq is a method to study protein-DNA interactions by immunoprecipitating DNA-bound proteins and sequencing the associated DNA fragments."}
+{"instruction": "What is peak calling in ChIP-Seq?", "output": "Peak calling identifies regions in the genome where proteins are bound, based on enrichment of sequencing reads."}
+{"instruction": "Explain ATAC-Seq.", "output": "ATAC-Seq is used to measure chromatin accessibility by inserting sequencing adapters into open regions of the genome."}
+{"instruction": "What are fragment size distributions in ATAC-Seq?", "output": "Fragment size distribution in ATAC-Seq helps distinguish nucleosome-free regions from mono- and di-nucleosome positions."}
+{"instruction": "Explain single-cell RNA-Seq.", "output": "Single-cell RNA-Seq sequences RNA from individual cells to study cell-specific gene expression and heterogeneity."}
+{"instruction": "What is UMI counting?", "output": "Unique Molecular Identifier (UMI) counting helps identify and remove PCR duplicates in single-cell RNA-Seq data."}
+{"instruction": "Explain HISAT2.", "output": "HISAT2 is a fast and splice-aware aligner for mapping RNA-Seq reads to a reference genome."}
+{"instruction": "What is STAR?", "output": "STAR is a splice-aware aligner designed for fast and accurate alignment of RNA-Seq reads, capable of detecting novel splice junctions."}
+{"instruction": "Explain FreeBayes.", "output": "FreeBayes is a variant caller that detects SNPs, indels, and complex variants using Bayesian models from aligned sequencing reads."}
+{"instruction": "What is Samblaster?", "output": "Samblaster marks duplicates and extracts discordant and split reads from SAM/BAM files for structural variant detection."}
+{"instruction": "Explain Picard metrics.", "output": "Picard metrics provide statistics on alignment quality, duplication rates, insert size distribution, and sequencing coverage."}
+{"instruction": "How to handle multi-mapped reads?", "output": "Multi-mapped reads align to multiple locations; they can be flagged or discarded depending on the analysis goal."}
+{"instruction": "Explain low coverage regions.", "output": "Low coverage regions have few sequencing reads, which can reduce confidence in variant calling and expression quantification."}
+{"instruction": "What is adapter contamination?", "output": "Adapter contamination occurs when sequencing adapters remain in reads; trimming them improves alignment and analysis quality."}
+{"instruction": "Explain GC bias in sequencing.", "output": "GC bias occurs when sequencing coverage is uneven due to high or low GC content, affecting downstream analyses."}
+{"instruction": "What is read duplication?", "output": "Read duplication refers to multiple reads originating from the same DNA fragment, often due to PCR amplification."}
+{"instruction": "Explain spliced alignment.", "output": "Spliced alignment maps RNA-Seq reads across exon-exon junctions to correctly detect splicing events."}
+{"instruction": "What is normalization in single-cell RNA-Seq?", "output": "Normalization adjusts for differences in sequencing depth and capture efficiency across cells."}
+{"instruction": "Explain clustering in single-cell RNA-Seq.", "output": "Clustering groups cells with similar expression profiles to identify cell types or states."}
+{"instruction": "What is dimensionality reduction?", "output": "Dimensionality reduction simplifies high-dimensional gene expression data for visualization and clustering."}
+{"instruction": "Explain quality control for single-cell RNA-Seq.", "output": "QC removes cells with low gene counts, high mitochondrial RNA, or other anomalies to improve analysis reliability."}
+{"instruction": "What are spike-in controls?", "output": "Spike-ins are known RNA molecules added to samples to monitor technical variability and normalization accuracy."}
+{"instruction": "Explain motif analysis in ChIP-Seq.", "output": "Motif analysis identifies recurring DNA sequence patterns in regions bound by proteins, suggesting binding preferences."}
+{"instruction": "What is peak annotation?", "output": "Peak annotation links ChIP-Seq peaks to genomic features such as promoters, enhancers, or gene bodies."}
+{"instruction": "Explain batch effect in RNA-Seq.", "output": "Batch effect is systematic variation between experimental batches that can confound results; correction is required for accurate analysis."}
+{"instruction": "What is differential expression?", "output": "Differential expression identifies genes whose expression levels differ significantly between conditions or groups."}
+{"instruction": "Explain pseudo-bulk analysis.", "output": "Pseudo-bulk aggregates single-cell data by cell type to perform conventional differential expression analyses."}
+{"instruction": "What is library complexity?", "output": "Library complexity measures the diversity of unique DNA/RNA molecules sequenced; low complexity indicates duplication or bias."}
+{"instruction": "Explain mitochondrial RNA content.", "output": "High mitochondrial RNA content in single-cell RNA-Seq can indicate stressed or damaged cells, often filtered out in QC."}
+{"instruction": "What is read trimming?", "output": "Read trimming removes low-quality bases and adapters to improve alignment and downstream analyses."}
+{"instruction": "Explain mapping quality score.", "output": "Mapping quality indicates the confidence that a read is correctly aligned to the reference genome."}
+{"instruction": "What is peak overlap?", "output": "Peak overlap compares ChIP-Seq peaks across conditions or replicates to identify shared or differential binding sites."}
+{"instruction": "Explain transcript quantification.", "output": "Transcript quantification measures expression levels of genes or isoforms using aligned RNA-Seq reads."}
+{"instruction": "What is UMAP?", "output": "UMAP is a dimensionality reduction technique for visualizing high-dimensional single-cell data in 2D or 3D space."}
+{"instruction": "Explain t-SNE.", "output": "t-SNE is another method for reducing dimensionality of single-cell data, often used for clustering visualization."}
+{"instruction": "What is read alignment QC?", "output": "QC metrics for alignment include percent mapped reads, mismatch rate, duplication rate, and coverage uniformity."}
+{"instruction": "Explain BAM file indexing.", "output": "Indexing BAM files allows fast random access to reads aligned to specific genomic regions."}
+{"instruction": "What is spurious peak filtering?", "output": "Spurious peaks are false-positive ChIP-Seq peaks, often filtered using input controls or statistical thresholds."}
+{"instruction": "Explain fragment deduplication.", "output": "Deduplication removes PCR duplicates from aligned reads to reduce bias in variant calling or peak calling."}
+{"instruction": "What is mitochondrial read filtering?", "output": "Filtering reads mapping to mitochondrial DNA in single-cell RNA-Seq can improve data quality for nuclear gene analyses."}
+{"instruction": "Explain doublet detection.", "output": "Doublets occur when two cells are captured as one; detection methods remove these to avoid misleading expression patterns."}
+{"instruction": "What is coverage normalization in ChIP-Seq?", "output": "Coverage normalization adjusts read counts to account for differences in sequencing depth across samples."}
+{"instruction": "Explain motif enrichment analysis.", "output": "Motif enrichment identifies DNA sequences that occur more frequently in peaks than expected by chance, revealing protein binding preferences."}
+{"instruction": "What is read saturation analysis?", "output": "Saturation analysis determines if sequencing depth is sufficient to capture most binding sites or transcripts."}
+{"instruction": "Explain single-cell RNA-Seq batch correction.", "output": "Batch correction removes technical variation between experimental batches while preserving biological differences."}
+{"instruction": "What is peak reproducibility?", "output": "Reproducibility measures consistency of ChIP-Seq peaks across biological replicates."}
+{"instruction": "Explain differential accessibility analysis in ATAC-Seq.", "output": "Differential accessibility identifies regions of chromatin that open or close between conditions or treatments."}
+{"instruction": "What is QC for ATAC-Seq?", "output": "ATAC-Seq QC evaluates fragment size distribution, TSS enrichment, and read depth to ensure high-quality data."}
+{"instruction": "Explain input control in ChIP-Seq.", "output": "Input control is DNA that did not undergo immunoprecipitation, used to correct for background signal in peak calling."}

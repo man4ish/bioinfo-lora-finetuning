@@ -1,0 +1,12 @@
+{"instruction": "Explain differential accessibility analysis in ATAC-Seq.", "output": "Differential accessibility identifies regions of chromatin that open or close between conditions or treatments."}
+{"instruction": "Describe what a BAM file contains.", "output": "A BAM file contains aligned sequencing reads in a binary format for efficient storage and analysis."}
+{"instruction": "What is normalization in single-cell RNA-Seq?", "output": "Normalization adjusts for differences in sequencing depth and capture efficiency across cells."}
+{"instruction": "What is library complexity?", "output": "Library complexity measures the diversity of unique DNA/RNA molecules sequenced; low complexity indicates duplication or bias."}
+{"instruction": "What is the purpose of read alignment?", "output": "Read alignment maps sequencing reads to a reference genome to identify where each read originated."}
+{"instruction": "Explain batch effect in RNA-Seq.", "output": "Batch effect is systematic variation between experimental batches that can confound results; correction is required for accurate analysis."}
+{"instruction": "Explain doublet detection.", "output": "Doublets occur when two cells are captured as one; detection methods remove these to avoid misleading expression patterns."}
+{"instruction": "What is UMAP?", "output": "UMAP is a dimensionality reduction technique for visualizing high-dimensional single-cell data in 2D or 3D space."}
+{"instruction": "Explain quality trimming in sequencing.", "output": "Quality trimming removes low-quality bases from reads to improve accuracy of downstream analysis."}
+{"instruction": "What is peak reproducibility?", "output": "Reproducibility measures consistency of ChIP-Seq peaks across biological replicates."}
+{"instruction": "What is a genome assembly?", "output": "Genome assembly is the process of reconstructing a genome from sequencing reads by connecting overlapping fragments."}
+{"instruction": "Explain single-cell RNA-Seq.", "output": "Single-cell RNA-Seq sequences RNA from individual cells to study cell-specific gene expression and heterogeneity."}
