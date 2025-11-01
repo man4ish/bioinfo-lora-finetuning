@@ -75,7 +75,13 @@ pip install sentencepiece --prefer-binary
 ## Fine-Tuning
 
 ```bash
-python src/lora_train.py
+python src/lora_train.py \     
+  --dataset_path data/bioinfo_train.jsonl \
+  --epochs 3 \
+  --batch_size 2 \
+  --gradient_accumulation 4 \
+  --lr 2e-4 \
+  --output_dir results/lora-adapter
 ```
 
 * Saves LoRA adapter to `./results/lora-adapter`
