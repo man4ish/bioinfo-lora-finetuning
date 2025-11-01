@@ -1,10 +1,173 @@
-{"instruction": "Explain what a FASTQ file is.", "output": "A FASTQ file stores sequencing reads with quality scores, each read represented by four lines: header, sequence, separator, and quality."}
-{"instruction": "What is SNP annotation?", "output": "SNP annotation links single-nucleotide polymorphisms to genes and predicts functional impacts."}
-{"instruction": "Describe what a BAM file contains.", "output": "A BAM file contains aligned sequencing reads in a binary format for efficient storage and analysis."}
-{"instruction": "Explain the difference between RNA-Seq and DNA-Seq.", "output": "RNA-Seq measures gene expression by sequencing RNA, while DNA-Seq sequences genomic DNA to detect variants."}
-{"instruction": "What is a VCF file?", "output": "A VCF file (Variant Call Format) lists genetic variants such as SNPs and indels with metadata and annotations."}
-{"instruction": "What is the purpose of read alignment?", "output": "Read alignment maps sequencing reads to a reference genome to identify where each read originated."}
-{"instruction": "Explain quality trimming in sequencing.", "output": "Quality trimming removes low-quality bases from reads to improve accuracy of downstream analysis."}
-{"instruction": "What are paired-end reads?", "output": "Paired-end reads sequence both ends of a DNA fragment, providing more context for alignment and variant calling."}
-{"instruction": "What is a genome assembly?", "output": "Genome assembly is the process of reconstructing a genome from sequencing reads by connecting overlapping fragments."}
-{"instruction": "Explain what a reference genome is.", "output": "A reference genome is a standard sequence used to compare and align sequencing reads for analysis."}
+{"instruction": "Explain what a FASTQ file is.", "output": "A FASTQ file stores sequencing reads along with quality scores. Each read has four lines: header, sequence, separator, and quality. It is widely used in high-throughput sequencing workflows."}
+{"instruction": "Describe a BAM file.", "output": "A BAM file is a compressed binary format of aligned sequencing reads. It contains mapping information, quality scores, and optional annotations for downstream analysis."}
+{"instruction": "What is a VCF file?", "output": "A VCF (Variant Call Format) file lists genetic variants such as SNPs, indels, and structural variations with annotations and metadata."}
+{"instruction": "Explain what an SNP is.", "output": "An SNP (Single Nucleotide Polymorphism) is a single base change in the genome that can affect traits or disease susceptibility."}
+{"instruction": "What is a CNV?", "output": "A CNV (Copy Number Variation) is a structural variation where sections of the genome are duplicated or deleted, potentially affecting gene expression."}
+{"instruction": "Explain read alignment.", "output": "Read alignment maps sequencing reads to a reference genome to determine their origin and detect variants or structural changes."}
+{"instruction": "What is RNA-Seq?", "output": "RNA-Seq sequences RNA molecules to measure gene expression levels and discover novel transcripts."}
+{"instruction": "Describe the FASTA file format.", "output": "FASTA is a text-based format for storing nucleotide or protein sequences, starting with a header line beginning with '>' followed by the sequence."}
+{"instruction": "Explain quality trimming.", "output": "Quality trimming removes low-quality bases from sequencing reads to improve alignment accuracy and variant calling."}
+{"instruction": "Explain paired-end sequencing.", "output": "Paired-end sequencing reads both ends of a DNA fragment, providing better alignment and detection of structural variations."}
+{"instruction": "What is GATK?", "output": "GATK (Genome Analysis Toolkit) is a software package for variant discovery and genotyping, widely used for SNP and indel calling."}
+{"instruction": "What is BWA?", "output": "BWA (Burrows-Wheeler Aligner) is a fast alignment tool for mapping short sequencing reads to a reference genome."}
+{"instruction": "What is STAR?", "output": "STAR is a fast RNA-Seq aligner used to map reads to a reference genome, especially for spliced transcripts."}
+{"instruction": "Explain genome assembly.", "output": "Genome assembly reconstructs a genome from sequencing reads by connecting overlapping fragments into contigs and scaffolds."}
+{"instruction": "What is a reference genome?", "output": "A reference genome is a standard sequence used to align reads and identify variants or gene locations."}
+{"instruction": "What is a SAM file?", "output": "SAM (Sequence Alignment Map) is a text format for storing aligned sequencing reads with mapping information."}
+{"instruction": "Explain variant calling.", "output": "Variant calling identifies genetic differences such as SNPs, indels, and structural variations from aligned reads."}
+{"instruction": "What is quality score in sequencing?", "output": "Quality scores indicate the confidence of each base call in sequencing reads, used to filter low-quality bases."}
+{"instruction": "Explain duplicate removal.", "output": "Duplicate removal eliminates PCR duplicates from sequencing data to avoid biases in variant calling."}
+{"instruction": "What is coverage depth?", "output": "Coverage depth refers to the number of sequencing reads covering a particular genomic position, affecting variant calling confidence."}
+{"instruction": "Explain indels.", "output": "Indels are small insertions or deletions in the genome, which can impact gene function and phenotype."}
+{"instruction": "What is a BED file?", "output": "A BED file stores genomic intervals, often used for annotating or extracting regions from a genome."}
+{"instruction": "Explain read mapping quality.", "output": "Mapping quality indicates the confidence that a read is correctly aligned to the reference genome."}
+{"instruction": "What is a consensus sequence?", "output": "A consensus sequence is derived from multiple reads to represent the most likely sequence at each genomic position."}
+{"instruction": "Explain variant annotation.", "output": "Variant annotation adds biological information to variants, such as gene impact, conservation, or clinical relevance."}
+{"instruction": "What is Picard?", "output": "Picard is a toolkit for manipulating sequencing data, including sorting, marking duplicates, and computing metrics."}
+{"instruction": "What is SAMtools?", "output": "SAMtools is a software suite for manipulating SAM/BAM files, including indexing, sorting, and variant calling."}
+{"instruction": "Explain splice junctions.", "output": "Splice junctions are the boundaries between exons in RNA, important for RNA-Seq alignment and transcript annotation."}
+{"instruction": "What is paired-end insert size?", "output": "Insert size is the distance between paired-end reads, used to validate library preparation and alignment."}
+{"instruction": "Explain read trimming with Trimmomatic.", "output": "Trimmomatic removes adapters and low-quality bases from sequencing reads to improve downstream analysis."}
+{"instruction": "What is a genome scaffold?", "output": "A scaffold is a sequence of ordered contigs in genome assembly, often separated by gaps of unknown bases."}
+{"instruction": "Explain gene expression quantification.", "output": "Gene expression quantification measures the abundance of RNA transcripts in RNA-Seq data, often using TPM or FPKM."}
+{"instruction": "What is a reference transcriptome?", "output": "A reference transcriptome is a set of known transcripts used for aligning RNA-Seq reads and quantifying expression."}
+{"instruction": "Explain variant filtration.", "output": "Variant filtration removes low-quality or likely false-positive variants based on quality scores and read depth."}
+{"instruction": "What is a structural variant?", "output": "A structural variant is a large genomic alteration such as a deletion, duplication, inversion, or translocation."}
+{"instruction": "Explain coverage normalization.", "output": "Coverage normalization adjusts read counts across samples or regions to make them comparable for downstream analysis."}
+{"instruction": "What is a genome index?", "output": "A genome index is a data structure created by aligners to accelerate mapping of reads to a reference genome."}
+{"instruction": "Explain soft clipping in alignments.", "output": "Soft clipping marks portions of reads that do not align to the reference without removing them, preserving sequence information."}
+{"instruction": "What is a junction file in RNA-Seq?", "output": "A junction file lists splice junctions detected from RNA-Seq data, used for transcript assembly and quantification."}
+{"instruction": "Explain transcriptome assembly.", "output": "Transcriptome assembly reconstructs RNA transcripts from RNA-Seq reads, identifying isoforms and novel transcripts."}
+{"instruction": "What is a genome variant database?", "output": "A variant database stores known genetic variants for comparison, annotation, and clinical interpretation."}
+{"instruction": "Explain duplicate read marking.", "output": "Duplicate marking labels reads originating from the same DNA fragment to avoid biases in variant calling."}
+{"instruction": "What is a quality control report?", "output": "A quality control report summarizes sequencing data quality metrics such as base quality, GC content, and duplication rate."}
+{"instruction": "Explain mapping bias.", "output": "Mapping bias occurs when reads preferentially align to certain regions, potentially affecting variant detection."}
+{"instruction": "What is read realignment?", "output": "Read realignment corrects misalignments around indels to improve variant calling accuracy."}
+{"instruction": "Explain RNA splicing.", "output": "RNA splicing removes introns from pre-mRNA to produce mature transcripts for translation."}
+{"instruction": "What is read deduplication?", "output": "Read deduplication removes PCR duplicates to reduce bias in sequencing analysis."}
+{"instruction": "Explain variant phasing.", "output": "Variant phasing determines which variants are on the same chromosome copy, important for haplotype analysis."}
+{"instruction": "What is the role of a genome annotation file?", "output": "Genome annotation files (e.g., GFF/GTF) describe gene locations, transcripts, and features for analysis."}
+{"instruction": "Explain alignment metrics.", "output": "Alignment metrics summarize how well reads map to the reference, including mapping rate, coverage, and duplication levels."}
+{"instruction": "What is read simulation?", "output": "Read simulation generates synthetic sequencing reads from a reference genome to test pipelines or aligners."}
+{"instruction": "Explain variant consequence prediction.", "output": "Variant consequence prediction annotates variants with their predicted effect on genes or proteins, such as missense or nonsense mutations."}
+{"instruction": "What is a reference index for STAR?", "output": "A STAR reference index is a preprocessed genome structure used by STAR aligner to quickly map RNA-Seq reads."}
+{"instruction": "Explain spliced alignment.", "output": "Spliced alignment maps RNA-Seq reads across exon-exon junctions to identify transcripts and splicing events."}
+{"instruction": "Explain what a FASTQ file is.", "output": "A FASTQ file stores sequencing reads along with quality scores. Each read has four lines: header, sequence, separator, and quality. It is widely used in high-throughput sequencing workflows."}
+{"instruction": "Describe a BAM file.", "output": "A BAM file is a compressed binary format of aligned sequencing reads. It contains mapping information, quality scores, and optional annotations for downstream analysis."}
+{"instruction": "What is a VCF file?", "output": "A VCF (Variant Call Format) file lists genetic variants such as SNPs, indels, and structural variations with annotations and metadata."}
+{"instruction": "Explain what an SNP is.", "output": "An SNP (Single Nucleotide Polymorphism) is a single base change in the genome that can affect traits or disease susceptibility."}
+{"instruction": "What is a CNV?", "output": "A CNV (Copy Number Variation) is a structural variation where sections of the genome are duplicated or deleted, potentially affecting gene expression."}
+{"instruction": "Explain read alignment.", "output": "Read alignment maps sequencing reads to a reference genome to determine their origin and detect variants or structural changes."}
+{"instruction": "What is RNA-Seq?", "output": "RNA-Seq sequences RNA molecules to measure gene expression levels and discover novel transcripts."}
+{"instruction": "Describe the FASTA file format.", "output": "FASTA is a text-based format for storing nucleotide or protein sequences, starting with a header line beginning with '>' followed by the sequence."}
+{"instruction": "Explain quality trimming.", "output": "Quality trimming removes low-quality bases from sequencing reads to improve alignment accuracy and variant calling."}
+{"instruction": "Explain paired-end sequencing.", "output": "Paired-end sequencing reads both ends of a DNA fragment, providing better alignment and detection of structural variations."}
+{"instruction": "What is GATK?", "output": "GATK (Genome Analysis Toolkit) is a software package for variant discovery and genotyping, widely used for SNP and indel calling."}
+{"instruction": "What is BWA?", "output": "BWA (Burrows-Wheeler Aligner) is a fast alignment tool for mapping short sequencing reads to a reference genome."}
+{"instruction": "What is STAR?", "output": "STAR is a fast RNA-Seq aligner used to map reads to a reference genome, especially for spliced transcripts."}
+{"instruction": "Explain genome assembly.", "output": "Genome assembly reconstructs a genome from sequencing reads by connecting overlapping fragments into contigs and scaffolds."}
+{"instruction": "What is a reference genome?", "output": "A reference genome is a standard sequence used to align reads and identify variants or gene locations."}
+{"instruction": "What is a SAM file?", "output": "SAM (Sequence Alignment Map) is a text format for storing aligned sequencing reads with mapping information."}
+{"instruction": "Explain variant calling.", "output": "Variant calling identifies genetic differences such as SNPs, indels, and structural variations from aligned reads."}
+{"instruction": "What is quality score in sequencing?", "output": "Quality scores indicate the confidence of each base call in sequencing reads, used to filter low-quality bases."}
+{"instruction": "Explain duplicate removal.", "output": "Duplicate removal eliminates PCR duplicates from sequencing data to avoid biases in variant calling."}
+{"instruction": "What is coverage depth?", "output": "Coverage depth refers to the number of sequencing reads covering a particular genomic position, affecting variant calling confidence."}
+{"instruction": "Explain indels.", "output": "Indels are small insertions or deletions in the genome, which can impact gene function and phenotype."}
+{"instruction": "What is a BED file?", "output": "A BED file stores genomic intervals, often used for annotating or extracting regions from a genome."}
+{"instruction": "Explain read mapping quality.", "output": "Mapping quality indicates the confidence that a read is correctly aligned to the reference genome."}
+{"instruction": "What is a consensus sequence?", "output": "A consensus sequence is derived from multiple reads to represent the most likely sequence at each genomic position."}
+{"instruction": "Explain variant annotation.", "output": "Variant annotation adds biological information to variants, such as gene impact, conservation, or clinical relevance."}
+{"instruction": "What is Picard?", "output": "Picard is a toolkit for manipulating sequencing data, including sorting, marking duplicates, and computing metrics."}
+{"instruction": "What is SAMtools?", "output": "SAMtools is a software suite for manipulating SAM/BAM files, including indexing, sorting, and variant calling."}
+{"instruction": "Explain splice junctions.", "output": "Splice junctions are the boundaries between exons in RNA, important for RNA-Seq alignment and transcript annotation."}
+{"instruction": "What is paired-end insert size?", "output": "Insert size is the distance between paired-end reads, used to validate library preparation and alignment."}
+{"instruction": "Explain read trimming with Trimmomatic.", "output": "Trimmomatic removes adapters and low-quality bases from sequencing reads to improve downstream analysis."}
+{"instruction": "What is a genome scaffold?", "output": "A scaffold is a sequence of ordered contigs in genome assembly, often separated by gaps of unknown bases."}
+{"instruction": "Explain gene expression quantification.", "output": "Gene expression quantification measures the abundance of RNA transcripts in RNA-Seq data, often using TPM or FPKM."}
+{"instruction": "What is a reference transcriptome?", "output": "A reference transcriptome is a set of known transcripts used for aligning RNA-Seq reads and quantifying expression."}
+{"instruction": "Explain variant filtration.", "output": "Variant filtration removes low-quality or likely false-positive variants based on quality scores and read depth."}
+{"instruction": "What is a structural variant?", "output": "A structural variant is a large genomic alteration such as a deletion, duplication, inversion, or translocation."}
+{"instruction": "Explain coverage normalization.", "output": "Coverage normalization adjusts read counts across samples or regions to make them comparable for downstream analysis."}
+{"instruction": "What is a genome index?", "output": "A genome index is a data structure created by aligners to accelerate mapping of reads to a reference genome."}
+{"instruction": "Explain soft clipping in alignments.", "output": "Soft clipping marks portions of reads that do not align to the reference without removing them, preserving sequence information."}
+{"instruction": "What is a junction file in RNA-Seq?", "output": "A junction file lists splice junctions detected from RNA-Seq data, used for transcript assembly and quantification."}
+{"instruction": "Explain transcriptome assembly.", "output": "Transcriptome assembly reconstructs RNA transcripts from RNA-Seq reads, identifying isoforms and novel transcripts."}
+{"instruction": "What is a genome variant database?", "output": "A variant database stores known genetic variants for comparison, annotation, and clinical interpretation."}
+{"instruction": "Explain duplicate read marking.", "output": "Duplicate marking labels reads originating from the same DNA fragment to avoid biases in variant calling."}
+{"instruction": "What is a quality control report?", "output": "A quality control report summarizes sequencing data quality metrics such as base quality, GC content, and duplication rate."}
+{"instruction": "Explain mapping bias.", "output": "Mapping bias occurs when reads preferentially align to certain regions, potentially affecting variant detection."}
+{"instruction": "What is read realignment?", "output": "Read realignment corrects misalignments around indels to improve variant calling accuracy."}
+{"instruction": "Explain RNA splicing.", "output": "RNA splicing removes introns from pre-mRNA to produce mature transcripts for translation."}
+{"instruction": "What is read deduplication?", "output": "Read deduplication removes PCR duplicates to reduce bias in sequencing analysis."}
+{"instruction": "Explain variant phasing.", "output": "Variant phasing determines which variants are on the same chromosome copy, important for haplotype analysis."}
+{"instruction": "What is the role of a genome annotation file?", "output": "Genome annotation files (e.g., GFF/GTF) describe gene locations, transcripts, and features for analysis."}
+{"instruction": "Explain alignment metrics.", "output": "Alignment metrics summarize how well reads map to the reference, including mapping rate, coverage, and duplication levels."}
+{"instruction": "What is read simulation?", "output": "Read simulation generates synthetic sequencing reads from a reference genome to test pipelines or aligners."}
+{"instruction": "Explain variant consequence prediction.", "output": "Variant consequence prediction annotates variants with their predicted effect on genes or proteins, such as missense or nonsense mutations."}
+{"instruction": "What is a reference index for STAR?", "output": "A STAR reference index is a preprocessed genome structure used by STAR aligner to quickly map RNA-Seq reads."}
+{"instruction": "Explain spliced alignment.", "output": "Spliced alignment maps RNA-Seq reads across exon-exon junctions to identify transcripts and splicing events."}
+{"instruction": "Explain variant phasing pipelines.", "output": "Variant phasing pipelines determine which variants are inherited together on the same chromosome, important for haplotype analysis."}
+{"instruction": "What is exome sequencing?", "output": "Exome sequencing targets all protein-coding regions in the genome to identify variants affecting genes."}
+{"instruction": "Explain whole-genome sequencing.", "output": "Whole-genome sequencing reads the entire genome to detect SNPs, indels, structural variants, and CNVs."}
+{"instruction": "What is target capture sequencing?", "output": "Target capture sequencing isolates specific genomic regions for deep sequencing, reducing cost and increasing coverage in regions of interest."}
+{"instruction": "Explain sequencing read length impact.", "output": "Longer reads improve alignment accuracy and detection of structural variants, while shorter reads are faster and cheaper."}
+{"instruction": "What is paired-end read merging?", "output": "Merging paired-end reads combines overlapping ends to create longer contiguous sequences and improve accuracy."}
+{"instruction": "Explain PCR duplicates in sequencing.", "output": "PCR duplicates are reads originating from the same DNA fragment due to amplification; removing them reduces bias in downstream analysis."}
+{"instruction": "What is read subsampling?", "output": "Read subsampling randomly selects a subset of reads to reduce computational requirements or simulate lower sequencing depth."}
+{"instruction": "Explain normalization in RNA-Seq.", "output": "Normalization adjusts for sequencing depth and gene length to make gene expression levels comparable across samples."}
+{"instruction": "What is single-cell RNA-Seq?", "output": "Single-cell RNA-Seq sequences RNA from individual cells to study heterogeneity and cell-specific expression patterns."}
+{"instruction": "Explain library preparation in sequencing.", "output": "Library preparation converts DNA or RNA into a format suitable for sequencing, including fragmentation, adapter ligation, and amplification."}
+{"instruction": "What is read quality filtering?", "output": "Read quality filtering removes low-quality reads based on base quality scores, improving alignment and variant calling accuracy."}
+{"instruction": "Explain splice site prediction.", "output": "Splice site prediction identifies intron-exon boundaries using computational models to support gene annotation and transcript assembly."}
+{"instruction": "What is alignment scoring?", "output": "Alignment scoring assigns scores to matches, mismatches, and gaps to evaluate the best alignment of reads to the reference."}
+{"instruction": "Explain variant genotype calling.", "output": "Genotype calling assigns genotypes (homozygous or heterozygous) to variants based on read evidence."}
+{"instruction": "What is variant allele frequency?", "output": "Variant allele frequency is the proportion of reads supporting a variant allele at a genomic position."}
+{"instruction": "Explain genome coverage analysis.", "output": "Genome coverage analysis measures how many reads cover each region, indicating completeness and reliability of sequencing."}
+{"instruction": "What is transcriptome completeness?", "output": "Transcriptome completeness assesses whether all expected transcripts are captured in RNA-Seq data."}
+{"instruction": "Explain exon-intron boundary annotation.", "output": "Exon-intron boundary annotation identifies precise positions of exons and introns to support splicing analysis and transcript assembly."}
+{"instruction": "What is base quality score recalibration?", "output": "Recalibration adjusts base quality scores based on known errors to improve downstream variant calling accuracy."}
+{"instruction": "Explain RNA-Seq strandedness.", "output": "Strandedness indicates whether reads originate from the sense or antisense strand, important for correct expression quantification."}
+{"instruction": "What is genome assembly polishing?", "output": "Polishing corrects errors in a genome assembly using read alignments to improve accuracy of consensus sequences."}
+{"instruction": "Explain variant annotation tools.", "output": "Variant annotation tools add biological context to variants, such as gene impact, conservation, and clinical relevance."}
+{"instruction": "What is paired-end fragment size distribution?", "output": "Fragment size distribution shows the lengths of DNA fragments in paired-end sequencing, used for quality assessment and library validation."}
+{"instruction": "Explain RNA-Seq library complexity metrics.", "output": "Library complexity metrics measure the diversity of RNA molecules sequenced to ensure sufficient coverage and reduce bias."}
+{"instruction": "What is read alignment visualization?", "output": "Alignment visualization displays how reads map to the reference genome, often using genome browsers for inspection."}
+{"instruction": "Explain variant calling confidence scores.", "output": "Confidence scores quantify the likelihood that a detected variant is true, based on read depth, quality, and allele balance."}
+{"instruction": "What is splice junction validation?", "output": "Validation confirms predicted splice junctions by comparing to known transcripts or using orthogonal data."}
+{"instruction": "Explain genome annotation updates.", "output": "Genome annotation updates incorporate new gene models, transcript variants, and functional information to maintain current references."}
+{"instruction": "What is RNA-Seq library size normalization?", "output": "Library size normalization adjusts read counts across samples to account for differences in sequencing depth."}
+{"instruction": "Explain read error correction.", "output": "Error correction identifies and fixes sequencing errors in reads to improve alignment and variant detection."}
+{"instruction": "What is transcript quantification accuracy?", "output": "Quantification accuracy measures how closely estimated transcript abundances reflect true expression levels."}
+{"instruction": "Explain reference genome masking.", "output": "Masking hides repetitive or low-complexity regions in the reference to prevent false alignments."}
+{"instruction": "What is RNA-Seq read stranded library?", "output": "Stranded libraries retain information about the original RNA strand, improving transcriptome annotation and quantification."}
+{"instruction": "Explain read mapping bias correction.", "output": "Bias correction adjusts for systematic alignment errors that preferentially map reads to certain genomic regions."}
+{"instruction": "What is variant recalibration?", "output": "Variant recalibration adjusts quality scores of called variants using machine learning models to separate true positives from false positives."}
+{"instruction": "Explain transcript-level differential expression.", "output": "Differential expression at the transcript level identifies changes in isoform abundance between conditions or samples."}
+{"instruction": "What is read pair orientation check?", "output": "Orientation checks ensure paired-end reads are correctly aligned and consistent with expected library design."}
+{"instruction": "Explain alternative splicing detection.", "output": "Alternative splicing detection identifies different exon combinations that produce multiple transcript isoforms from the same gene."}
+{"instruction": "What is read depth normalization?", "output": "Read depth normalization adjusts counts to correct for sequencing coverage differences across samples or regions."}
+{"instruction": "Explain variant filtering by quality metrics.", "output": "Filtering removes low-quality variants using metrics like quality score, read depth, allele balance, and mapping quality."}
+{"instruction": "What is genome coverage visualization?", "output": "Coverage visualization shows read depth across the genome, often using plots or genome browsers to detect gaps or biases."}
+{"instruction": "Explain read adapter contamination detection.", "output": "Adapter contamination detection identifies residual adapter sequences in reads that can affect alignment and variant calling."}
+{"instruction": "What is RNA-Seq spike-in normalization?", "output": "Spike-in normalization uses known RNA controls to adjust expression measurements and account for technical variability."}
+{"instruction": "Explain read trimming strategies for low-quality bases.", "output": "Trimming strategies remove bases with low quality scores at read ends to improve alignment accuracy."}
+{"instruction": "What is genome assembly scaffolding?", "output": "Scaffolding links contigs into longer sequences using paired-end or mate-pair information to reconstruct chromosomes."}
+{"instruction": "Explain variant annotation with VEP.", "output": "VEP (Variant Effect Predictor) annotates variants with predicted consequences on genes, proteins, and regulatory regions."}
+{"instruction": "What is reference-guided genome assembly?", "output": "Reference-guided assembly aligns reads to a reference genome to assist in constructing contigs and scaffolds."}
+{"instruction": "Explain quality control of RNA-Seq libraries.", "output": "QC evaluates library metrics such as read quality, duplication rate, GC bias, and coverage to ensure reliable sequencing."}
+{"instruction": "What is structural variant validation?", "output": "Validation confirms detected structural variants using orthogonal methods such as PCR or long-read sequencing."}
+{"instruction": "Explain read mapping error rates.", "output": "Error rates indicate the fraction of reads incorrectly aligned to the reference, impacting variant calling and analysis."}
+{"instruction": "What is multi-sample RNA-Seq analysis?", "output": "Multi-sample RNA-Seq analysis compares expression across multiple conditions or individuals to identify differentially expressed genes."}
+{"instruction": "Explain reference genome assembly versions.", "output": "Assembly versions track updates to reference genomes, including corrections, annotations, and improved coverage."}
+{"instruction": "What is read trimming impact on variant calling?", "output": "Proper trimming removes low-quality or adapter sequences, improving read alignment and accuracy of variant calls."}
+{"instruction": "Explain transcriptome annotation refinement.", "output": "Refinement updates transcript models based on new RNA-Seq data or improved computational predictions to capture isoforms accurately."}
+{"instruction": "What is exon-level coverage analysis?", "output": "Exon-level coverage evaluates read depth across each exon to detect missing or poorly sequenced regions."}
+{"instruction": "Explain alternative polyadenylation detection.", "output": "Alternative polyadenylation identifies different 3' ends of transcripts, affecting mRNA stability and translation."}
+{"instruction": "What is RNA-Seq strand specificity?", "output": "Strand specificity indicates whether the sequenced reads preserve the original RNA strand information, important for accurate quantification."}
+{"instruction": "Explain read quality visualization.", "output": "Quality visualization plots base quality scores, read length distribution, and other metrics to assess sequencing performance."}
+{"instruction": "What is variant call set comparison?", "output": "Call set comparison evaluates concordance between different variant detection runs or tools to assess accuracy and reproducibility."}
+{"instruction": "Explain genome annotation consistency checks.", "output": "Consistency checks verify that gene and transcript annotations are logical, complete, and match reference coordinates."}
+{"instruction": "What is read error profiling?", "output": "Error profiling identifies systematic sequencing errors and helps optimize trimming, alignment, and variant calling parameters."}
+{"instruction": "Explain differential splicing analysis.", "output": "Differential splicing analysis identifies changes in exon usage or transcript isoform abundance between conditions."}
+{"instruction": "What is RNA-Seq fragment bias correction?", "output": "Fragment bias correction adjusts read counts to account for sequence or positional biases introduced during library preparation."}
+{"instruction": "Explain genome variant prioritization.", "output": "Variant prioritization ranks variants by predicted impact, frequency, and clinical relevance for downstream studies."}
