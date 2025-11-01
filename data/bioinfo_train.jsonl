@@ -1,0 +1,10 @@
+{"instruction": "Explain what a FASTQ file is.", "output": "A FASTQ file stores sequencing reads with quality scores, each read represented by four lines: header, sequence, separator, and quality."}
+{"instruction": "What is SNP annotation?", "output": "SNP annotation links single-nucleotide polymorphisms to genes and predicts functional impacts."}
+{"instruction": "Describe what a BAM file contains.", "output": "A BAM file contains aligned sequencing reads in a binary format for efficient storage and analysis."}
+{"instruction": "Explain the difference between RNA-Seq and DNA-Seq.", "output": "RNA-Seq measures gene expression by sequencing RNA, while DNA-Seq sequences genomic DNA to detect variants."}
+{"instruction": "What is a VCF file?", "output": "A VCF file (Variant Call Format) lists genetic variants such as SNPs and indels with metadata and annotations."}
+{"instruction": "What is the purpose of read alignment?", "output": "Read alignment maps sequencing reads to a reference genome to identify where each read originated."}
+{"instruction": "Explain quality trimming in sequencing.", "output": "Quality trimming removes low-quality bases from reads to improve accuracy of downstream analysis."}
+{"instruction": "What are paired-end reads?", "output": "Paired-end reads sequence both ends of a DNA fragment, providing more context for alignment and variant calling."}
+{"instruction": "What is a genome assembly?", "output": "Genome assembly is the process of reconstructing a genome from sequencing reads by connecting overlapping fragments."}
+{"instruction": "Explain what a reference genome is.", "output": "A reference genome is a standard sequence used to compare and align sequencing reads for analysis."}
